@@ -1,29 +1,86 @@
-.html_wrap {
-  display: flex;
-  flex-direction: column;
+.progress_wrap {
   width: 30em;
-}
-
-.html_wrap label {
-  margin: 10px 0;
+  height: 73vh;
+  position: relative;
 }
 
 .bar {
   background-color: rgb(233, 233, 233);
   border-radius: 5px;
-  min-height: 2em;
+}
+
+.bar_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar_wrap label {
+  margin: 10px 0;
 }
 
 .inner_bar {
   background-color: rgb(106, 250, 178);
-  height: 2em;
-  width: 80%;
+  height: 1.5em;
+  width: 0%;
   position: relative;
 }
-
 .inner_bar:after {
   position: absolute;
   right: 2.5%;
   top: 5px;
   content: attr(data-percent);
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+.pagination li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.pagination li:hover {
+  cursor: pointer;
+}
+
+.initialLoad {
+  display: none;
+}
+
+.afterLoad {
+  display: block;
+  transition: display 1s;
+}
+
+.html-90 {
+  width: 90%;
+}
+.css-70 {
+  width: 70%;
+}
+.js-80 {
+  width: 80%;
+}
+.python-40 {
+  width: 40%;
+}
+.express-80 {
+  width: 80%;
+}
+.react-80 {
+  width: 80%;
+}
+.django-10 {
+  width: 10%;
+}
+.graphql-75 {
+  width: 75%;
+}
+.redux-50 {
+  width: 50%;
+}
+.apollo-75 {
+  width: 75%;
 }
