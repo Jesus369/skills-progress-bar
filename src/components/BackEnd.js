@@ -2,25 +2,20 @@ import React, { Component } from "react";
 
 class BackEnd extends Component {
   render() {
-    const { backend } = this.props;
     return (
-      <div className={`${!backend ? "initialLoad" : "afterLoad"}`}>
+      <div>
         <div className="bar_wrap">
-          <label>React</label>
+          <label>Express</label>
           <div className="bar">
-            <div className="inner_bar html-80" data-percent="80%" />
+            <div className="inner_bar express-80" data-percent="80%" />
           </div>
-        </div>
-        <div className="bar_wrap">
-          <label>Graphql</label>
-          <div className="bar">
-            <div className="inner_bar html-80" data-percent="80%" />
-          </div>
-        </div>
-        <div className="bar_wrap">
           <label>Apollo</label>
           <div className="bar">
-            <div className="inner_bar html-80" data-percent="80%" />
+            <div className="inner_bar apollo-75" data-percent="75%" />
+          </div>
+          <label>Django</label>
+          <div className="bar">
+            <div className="inner_bar django-10" data-percent="10%" />
           </div>
         </div>
       </div>
