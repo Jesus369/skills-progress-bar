@@ -1,40 +1,47 @@
 import React, { Component } from "react";
 import "./styles.css";
 
+import Languages from "./components/Languages";
 import FrontEnd from "./components/FrontEnd";
 import BackEnd from "./components/BackEnd";
+import Tools from "./components/Tools";
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      frontend: false,
-      backend: false
+      currentPage: 1
     };
   }
 
-  manage_frontend_pag = () => {
+  manageIndex = e => {
+    const { value } = e.target;
     this.setState({
-      frontend: !this.state.frontend,
-      backend: !this.state.backend
-    });
-  };
-
-  manage_backend_pag = () => {
-    this.setState({
-      frontend: !this.state.frontend,
-      backend: !this.state.backend
+      currentPage: value
     });
   };
 
   render() {
-    const { frontend, backend } = this.state;
+    const { currentPage } = this.state;
     return (
       <div className="progress_wrap">
-        <FrontEnd frontend={frontend} />
-        <BackEnd backend={backend} />
+        {currentPage === 1 ? <Languages /> : null}
+        {currentPage === 2 ? <FrontEnd /> : null}
+        {currentPage === 3 ? <BackEnd /> : null}
+        {currentPage === 4 ? <Tools /> : null}
         <ul className="pagination">
-          <li onClick={this.manage_frontend_pag}>1</li>
-          <li onClick={this.manage_backend_pag}>2</li>
+          <li value={1} onClick={this.manageIndex}>
+            Languages
+          </li>
+          <li value={2} onClick={this.manageIndex}>
+            FrontEnd
+          </li>
+          <li value={3} onClick={this.manageIndex}>
+            BackEnd
+          </li>
+          <li value={4} onClick={this.manageIndex}>
+            Tools
+          </li>
         </ul>
       </div>
     );
