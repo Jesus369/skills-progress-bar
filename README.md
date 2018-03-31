@@ -2,7 +2,7 @@
 
 Create the template, and add your classNames.
 data-percent is a value that will be displayed on the interface.
-`
+```
 <div className="wrap">
   <div className="bar_wrap">
     <label>Github</label>
@@ -11,9 +11,9 @@ data-percent is a value that will be displayed on the interface.
     </div>
   </div>
 </div>
-`
+```
 
-`
+```
 constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +27,7 @@ constructor(props) {
       displayedSkill: parseInt(name)
     });
   };
-`
+```
 
 ![screen shot 2018-03-29 at 8 43 48 pm](https://user-images.githubusercontent.com/31966603/38120975-fb631316-3391-11e8-9674-cc05eca53085.png)
 
