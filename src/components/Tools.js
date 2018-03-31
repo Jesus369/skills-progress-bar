@@ -1,24 +1,32 @@
-import React, { Component } from "react";
-
-class Tools extends Component {
-  render() {
-    return (
-      <div>
-        <label>AWS S3</label>
-        <div className="bar">
-          <div className="inner_bar react-80" data-percent="80%" />
+<div>
+        <div className="bar_wrap">
+          <label>Github</label>
+          <div className="bar">
+            <div className="inner_bar github-75" data-percent="75%" />
+          </div>
         </div>
-        <label>Heroku</label>
-        <div className="bar">
-          <div className="inner_bar react-80" data-percent="80%" />
+        <div className="bar_wrap">
+          <label>JQuery</label>
+          <div className="bar">
+            <div className="inner_bar jquery-50" data-percent="50%" />
+          </div>
         </div>
-        <label>Github</label>
-        <div className="bar">
-          <div className="inner_bar react-80" data-percent="80%" />
+        <div className="bar_wrap">
+          <label>Heroku</label>
+          <div className="bar">
+            <div className="inner_bar heroku-50" data-percent="50%" />
+          </div>
+        </div>
+        <div className="bar_wrap">
+          <label>Sass</label>
+          <div className="bar">
+            <div className="inner_bar sass-40 " data-percent="40%" />
+          </div>
+        </div>
+        <div className="bar_wrap">
+          <label>AWS S3</label>
+          <div className="bar">
+            <div className="inner_bar aws-30" data-percent="30%" />
+          </div>
         </div>
       </div>
-    );
-  }
-}
-
-export default Tools;
