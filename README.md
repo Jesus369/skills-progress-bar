@@ -15,18 +15,18 @@ data-percent is a value that will be displayed on the interface.
 
 ```
 constructor(props) {
-    super(props);
-    this.state = {
-      displayedSkill: 1
+  super(props);
+  this.state = {
+    displayedSkill: 1
     };
-  }
+}
 
-  manageIndex = e => {
-    const { name } = e.target;
-    this.setState({
-      displayedSkill: parseInt(name)
+ manageIndex = e => {
+  const { name } = e.target;
+  this.setState({
+    displayedSkill: parseInt(name)
     });
-  };
+};
 ```
 
 ![screen shot 2018-03-29 at 8 43 48 pm](https://user-images.githubusercontent.com/31966603/38120975-fb631316-3391-11e8-9674-cc05eca53085.png)
