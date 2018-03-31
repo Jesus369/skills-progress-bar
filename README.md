@@ -3,7 +3,7 @@
 Let's get started!
 
 #### Tools.js
-..* Create the template for your tools skills, and add your classNames.
+* Create the template for your tools skills, and add your classNames.
 ..* data-percent is a value that will be displayed on the interface.
 ```
 <div className="wrap">
@@ -17,13 +17,13 @@ Let's get started!
 ```
 
 #### GroupSkills.js
-..* Import your skills
+* Import your skills
 ```
 import Tools from "./Tools";
 ```
 
-..* Set the state. The number provided to displayedSkill will decide which component to render
-..* manageIndex changes the state onClick. Provide the name from ```e.target``` and set the state to it.
+* Set the state. The number provided to displayedSkill will decide which component to render
+* manageIndex changes the state onClick. Provide the name from ```e.target``` and set the state to it.
 ```
 constructor(props) {
   super(props);
@@ -41,14 +41,14 @@ constructor(props) {
 ```
 
 ###### GroupSkills.js - Render
-..* Having access to the state
+* Having access to the state
 ```
 const { displayedSkill } = this.state;
 ```
 
 ###### GroupSkills.js - Return
-..* If displayedSkill is set to 1 then render the Tools component
-..* The button will update displayedSkill's value onClick
+* If displayedSkill is set to 1 then render the Tools component
+* The button will update displayedSkill's value onClick
 ```
 <div className="skills_component">
   <div className="progress_wrap">
