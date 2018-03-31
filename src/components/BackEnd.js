@@ -9,10 +9,14 @@ class BackEnd extends Component {
           <div className="bar">
             <div className="inner_bar express-80" data-percent="80%" />
           </div>
+        </div>
+        <div className="bar_wrap">
           <label>Apollo</label>
           <div className="bar">
             <div className="inner_bar apollo-75" data-percent="75%" />
           </div>
+        </div>
+        <div className="bar_wrap">
           <label>Django</label>
           <div className="bar">
             <div className="inner_bar django-10" data-percent="10%" />
